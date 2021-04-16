@@ -35,6 +35,10 @@ export default function Seo({title, image, description, meta = []}) {
           content: defaultDescription
         },
         {
+          name: "google-site-verification",
+          content: "vI9Smq6jbiI-QqeTCAmznQ_T14iRbvTjIpU_KKROJLA"
+        },
+        {
           name: "og:title",
           content: defaultTitle
         },
