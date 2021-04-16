@@ -6,15 +6,16 @@ import "./blog.scss"
 import Seo from "../components/Seo"
 
 export default function Blog({data}) {
-  const { html, frontmatter: {title, subtitle, coverImage} } = data.markdownRemark
-
+  const { html, frontmatter: {title, subtitle, coverImage, slug} } = data.markdownRemark
+  const seo = {
+    title,
+    subtitle,
+    image: coverImage,
+    url: `/blogs/${slug}`
+  }
   return (
-    <Layout>
-      <Seo
-        title={title}
-        description={subtitle}
-        image={coverImage}
-      />
+    <Layout seo={seo}>
+      <Seo {...seo}/>
       <h1>{title}</h1>
       <div className="blog-content">
         <div dangerouslySetInnerHTML={{__html: html}}></div>
@@ -28,6 +29,7 @@ export const query = graphql`
     markdownRemark(frontmatter: {slug: {eq: $slug}}) {
       html
       frontmatter {
+        slug
         title
         subtitle
         coverImage
