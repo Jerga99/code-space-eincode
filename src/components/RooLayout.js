@@ -1,4 +1,5 @@
 import React from "react"
+import ThemeProvider from "./ThemeProvider"
 import { library, config } from "@fortawesome/fontawesome-svg-core"
 import {
   faSun,
@@ -16,8 +17,8 @@ library.add(faSun, faMoon)
 export default function RootLayout({children}) {
 
   return (
-    <div className="theme-provider">
+    <ThemeProvider>
       {children}
-    </div>
+    </ThemeProvider>
   )
 }
