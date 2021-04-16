@@ -5,7 +5,7 @@ module.exports = {
     feeds: [{
       serialize: ({ query: { allMarkdownRemark } }) => {
         return allMarkdownRemark.edges.map(({node}) => {
-          const url = `${process.env.BASE_URL}/blogs/${node.frontmatter.slug}`
+          const url = `${process.env.BASE_URL}/blogs/${node.frontmatter.slug}/`
           return Object.assign({}, node.frontmatter, {
             description: node.frontmatter.subtitle,
             url,
