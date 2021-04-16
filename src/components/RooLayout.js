@@ -1,5 +1,5 @@
 import React from "react"
-import ThemeProvider from "./ThemeProvider"
+import ThemeProvider, { useTheme } from "./ThemeProvider"
 import { library, config } from "@fortawesome/fontawesome-svg-core"
 import {
   faSun,
@@ -14,11 +14,33 @@ import "react-toggle/style.css"
 config.autoAddCss = false
 library.add(faSun, faMoon)
 
+const MainWrapper = ({children}) => {
+  const { theme } = useTheme()
+  return (
+    <>
+    <div className={`main-wrapper ${theme.type}`}>
+      {children}
+    </div>
+    <style>
+      {`
+        html, body {
+          background: ${theme.background};
+          color: ${theme.fontColor};
+          transition: color 0.2s ease-out, background 0.2s ease-out;
+        }
+      `}
+    </style>
+    </>
+  )
+}
+
 export default function RootLayout({children}) {
 
   return (
     <ThemeProvider>
-      {children}
+      <MainWrapper>
+        {children}
+      </MainWrapper>
     </ThemeProvider>
   )
 }

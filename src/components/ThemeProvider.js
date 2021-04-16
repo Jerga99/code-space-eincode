@@ -15,7 +15,7 @@ const themes = {
   dark: {
     type: "dark",
     fontColor: "#dcdcdc",
-    background: "#2v2c38"
+    background: "#2b2c38"
   }
 }
 
