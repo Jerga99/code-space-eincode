@@ -16,6 +16,7 @@ module.exports = {
   },
   plugins: [
     "gatsby-plugin-sass",
+    "gatsby-plugin-sitemap",
     {
       resolve: "gatsby-plugin-feed",
       options: rss.options
