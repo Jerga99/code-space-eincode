@@ -10,4 +10,6 @@ coverImage: https://import.cdn.thinkific.com/335268/llo44iPiRBCsYnf3wYEk_c%23_Lo
 
 ## Learn something new, design pattern are still cool
 
+![alt text](https://import.cdn.thinkific.com/335268/llo44iPiRBCsYnf3wYEk_c%23_Logo.jpg "Logo Title Text")
+
 Learn something new, design pattern are still cool

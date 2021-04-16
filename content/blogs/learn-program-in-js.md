@@ -10,6 +10,8 @@ coverImage: https://import.cdn.thinkific.com/335268/8R9DeheYS8CP1Wrtm5Gk_javascr
 
 ## Emphasis
 
+![alt text](https://import.cdn.thinkific.com/335268/8R9DeheYS8CP1Wrtm5Gk_javascript.jpg "Logo Title Text")
+
 **This is bold text**
 
 __This is bold text__

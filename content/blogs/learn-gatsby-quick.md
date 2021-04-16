@@ -9,6 +9,9 @@ coverImage: https://import.cdn.thinkific.com/335268/L2JwqFccTlue3rilU5yK_react.j
 ---
 
 # h1 Heading 8-)
+
+![alt text](https://import.cdn.thinkific.com/335268/L2JwqFccTlue3rilU5yK_react.jpg "Logo Title Text")
+
 ## h2 Heading
 ### h3 Heading
 #### h4 Heading
