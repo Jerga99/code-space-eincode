@@ -4,8 +4,8 @@ import ThemeToggle from "./ThemeToggle"
 import { useTheme } from "./ThemeProvider"
 
 export default function AppHeader({seo}) {
-  const theme = useTheme();
-  debugger
+  const { theme } = useTheme()
+
   return (
     <nav className="navbar is-transparent mb-5 p-5">
       <div className="navbar-brand">
