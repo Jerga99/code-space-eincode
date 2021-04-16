@@ -1,11 +1,8 @@
 import React from 'react'
 import { Link } from "gatsby"
 import ThemeToggle from "./ThemeToggle"
-import { useTheme } from "./ThemeProvider"
 
-export default function AppHeader({seo}) {
-  const { theme } = useTheme()
-
+export default function AppHeader() {
   return (
     <nav className="navbar is-transparent mb-5 p-5">
       <div className="navbar-brand">
