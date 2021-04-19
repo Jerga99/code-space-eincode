@@ -16,9 +16,12 @@ export default function Blog({data}) {
   return (
     <Layout seo={seo}>
       <Seo {...seo}/>
-      <h1>{title}</h1>
       <div className="blog-content">
-        <div dangerouslySetInnerHTML={{__html: html}}></div>
+        <div className="columns">
+          <div className="column is-10 is-offset-1">
+            <div dangerouslySetInnerHTML={{__html: html}}></div>
+          </div>
+        </div>
       </div>
     </Layout>
   )
